@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int PF;
+    int FE;
+    int AP;
+    printf("Enter your PF marks : ");
+    scanf(" %d", &PF);
+    printf("Enter your FE marks : ");
+    scanf(" %d", &FE);
+    printf("Enter your AP marks : ");
+    scanf(" %d", &AP);
+    printf("PF = %d, FE = %d, AP = %d\n", PF, FE, AP);
+    int total = PF + FE + AP;
+    double percentage = (total / 300.0) * 100;
+    printf("Total marks obtained are %d \n", total);
+    printf("Your percentage is %.2f \n", percentage);
+    return 0;
+}
